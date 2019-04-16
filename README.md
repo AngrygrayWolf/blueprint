@@ -1,23 +1,16 @@
 # blueprint
 
-## 安装依赖
+## Project setup
 ```
-cnpm install
-```
-
-### 开发者模式
-```bash
-cnpm run serve
+yarn install
 ```
 
-如果出现 `ERRONET`网络错误，需要配置 `hosts`文件。
-
-> 在hosts文件中添加:
->
-> 127.0.0.1 hostname(你的主机名)
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
 ### Compiles and minifies for production
-
 ```
 yarn run build
 ```

@@ -6,6 +6,7 @@
       <Radar/>
     </div>
     <div class="center">
+    <TMap />
     </div>
     <div class="right">
       <One/>
@@ -14,12 +15,11 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import OneNew from "./components/OneNew.vue";
 import Polar from "./components/graph/Polar.vue";
 import LineD from "./components/graph/LineD.vue";
 import One from "./components/news/One.vue";
 import Radar from "./components/graph/Radar.vue";
+import TMap from "./components/graph/TMap.vue"
 
 export default {
   name: "app",
@@ -27,7 +27,8 @@ export default {
     Polar,
     LineD,
     One,
-    Radar
+    Radar,
+    TMap
   }
 };
 </script>

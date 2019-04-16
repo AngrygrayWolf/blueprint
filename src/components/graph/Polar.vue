@@ -1,5 +1,11 @@
 <template>
-    <v-chart :options="polar"/>
+    <div>
+        <div class="title">
+                <div class="icon_vertical"></div>
+                标题一
+        </div>
+        <v-chart :options="polar"/>
+    </div>
 </template>
 
 

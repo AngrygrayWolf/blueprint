@@ -1,5 +1,11 @@
 <template>
+<div>
+<div class="title">
+            <div class="icon_vertical"></div>
+            标题一
+        </div>
     <v-radar :options="radar"></v-radar>
+    </div>
 </template>
 
 <script>

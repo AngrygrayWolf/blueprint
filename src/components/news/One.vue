@@ -1,6 +1,9 @@
 <template>
-    <div class="container mp30">
         <div class="row">
+        <div class="title">
+            <div class="icon_vertical"></div>
+            新闻滚动
+        </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -10,67 +13,47 @@
                             <div class="col-xs-12">
                                 <ul class="demo1">
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/1.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                        <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p> 
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
+                                        <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
+                                        <!--<table cellpadding="4">
                                             <tr>
                                                 <td><img src="images/2.png" width="60" class="img-circle" /></td>
                                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                                                     in venenatis enim... <a href="#">Read more...</a></td>
                                             </tr>
-                                        </table>
+                                        </table>-->
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/3.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                        <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
+                                    
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/4.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                        <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/5.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                        <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/6.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                         <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
                                     </li>
                                     <li class="news-item">
-                                        <table cellpadding="4">
-                                            <tr>
-                                                <td><img src="images/7.png" width="60" class="img-circle" /></td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                                    in venenatis enim... <a href="#">Read more...</a></td>
-                                            </tr>
-                                        </table>
+                                         <p class="first">第一部分内容</p>
+                                        <p class="content">第二部分内容</p>
+                                        <p class="time">2019-01-12 19:23:23</p>
                                     </li>
                                 </ul>
                             </div>
@@ -83,10 +66,11 @@
             </div>
 
         </div>
-    </div>
+
 </template>
 
 <script>
+
 export default {
     name: 'One',
     mounted() {
@@ -105,6 +89,26 @@ export default {
 </script>
 
 <style>
+.news-item {
+    float: left;
+    margin: 0 3px 0 5px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 22px;
+    margin-bottom: 3px;
+    border-bottom: 2px solid gray;
+}
+.news-item p {
+    display: inline-block;
+}
+.first {
+    color: #fcc;
+}
 
+.time:last {
+    display: block;
+    content: '';
+    clear: both;
+}
 </style>
 
