@@ -6,7 +6,12 @@
       <Radar/>
     </div>
     <div class="center">
-    <TMap />
+      <div class="graph">
+        <TMap />
+        <TMap />
+        <TMap />
+        <TMap />
+      </div>
     </div>
     <div class="right">
       <One/>
@@ -50,7 +55,26 @@ export default {
 }
 
 .center {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
   width: 50%;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+  /* height: 50%; */
+  margin: 0 -5px;
+}
+
+.graph {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .right {
   float: right;

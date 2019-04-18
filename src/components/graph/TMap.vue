@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <v-chart class="map" :options="map"
+    <v-chart class="map" :options="map"
         autoresize/>
-    </div>
 </template>
 
 <script>
@@ -32,7 +30,7 @@ export default {
 
 <style>
 .map {
-    width: 100%;
-
+    width: 49%;
+    border: 2px solid gray;
 }
 </style>

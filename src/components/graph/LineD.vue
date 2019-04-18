@@ -61,7 +61,6 @@ let options = {
                 Sunny: {
                     height: 40,
                     align: 'center',
-   
                 },
                 Cloudy: {
                     height: 40,
@@ -85,7 +84,7 @@ let options = {
                 symbolSize: 1,
                 symbolOffset: [0, '50%'],
                 label: {
-                   normal: {
+                    normal: {
                         formatter: '{a|{a}\n}{b|{b} }{c|{c}}',
                         backgroundColor: 'rgb(242,242,242)',
                         borderColor: '#aaa',
@@ -112,7 +111,7 @@ let options = {
                                 textBorderWidth: 2
                             },
                             b: {
-                                 color: '#333'
+                                color: '#333'
                             },
                             c: {
                                 color: '#ff8811',
@@ -121,7 +120,7 @@ let options = {
                                 fontSize: 22
                             }
                         }
-                   }
+                }
                 },
                 data: [
                     {type: 'max', name: 'max days: '},
@@ -157,7 +156,8 @@ export default {
 
 <style>
 .echarts {
-    width: 80%;
+    width: 500px;
+    max-height: 30%;
 }
 .icon_vertical {
     float: left;
