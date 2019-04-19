@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #2c3e50;
+}
 #app {
   display: flex;
   flex-direction: row;
