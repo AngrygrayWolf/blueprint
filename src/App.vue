@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: rgba(37,37,48)
+}
 #app {
   display: flex;
   flex-direction: row;
@@ -46,8 +49,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
+  color:rgba(236,255,255,1);
   margin-top: 60px;
+  
+  
 }
 
 .left {

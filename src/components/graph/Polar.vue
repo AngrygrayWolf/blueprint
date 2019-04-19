@@ -59,6 +59,9 @@ export default {
         radiusAxis: {
             min: 0
         },
+        textStyle:{
+            color: 'rgba(236,255,255,1)',
+        },
         series: [
             {
                 coordinateSystem: 'polar',

@@ -37,6 +37,11 @@ let options = {
             saveAsImage: {}
         }
     },
+    textStyle:{
+        color: 'rgba(236,255,255,1)',
+    },
+            
+ 
     xAxis: {
         type: 'value',
         name: 'Days',
@@ -48,6 +53,7 @@ let options = {
         type: 'category',
         inverse: true,
         data: ['Sunny', 'Cloudy', 'Showers'],
+        
         axisLabel: {
             formatter: function (value) {
                 return '{' + value + '| }\n{value|' + value + '}';
@@ -101,21 +107,26 @@ let options = {
                         rich: {
                             a: {
                                 align: 'center',
-                                color: '#fff',
+                                //color: '#fff',
+                                color: 'rgba(236,255,255,1)',
                                 fontSize: 18,
                                 textShadowBlur: 2,
                                 textShadowColor: '#000',
                                 textShadowOffsetX: 0,
                                 textShadowOffsetY: 1,
-                                textBorderColor: '#333',
+                                //textBorderColor: '#333',
+                                textBorderColor: 'rgba(236,255,255,1)',
                                 textBorderWidth: 2
                             },
                             b: {
-                                color: '#333'
+                                //color: '#333'
+                                color: 'rgba(236,255,255,1)',
                             },
                             c: {
-                                color: '#ff8811',
-                                textBorderColor: '#000',
+                                //color: '#ff8811',
+                                //textBorderColor: '#000',
+                                color: 'rgba(236,255,255,1)',
+                                textBorderColor: 'rgba(236,255,255,1)',
                                 textBorderWidth: 1,
                                 fontSize: 22
                             }
