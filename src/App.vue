@@ -39,8 +39,8 @@ export default {
 </script>
 
 <style>
-body {
-  background-color: #2c3e50;
+body{
+  background-color: rgba(37,37,48)
 }
 #app {
   display: flex;
@@ -49,8 +49,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
+  color:rgba(236,255,255,1);
   margin-top: 60px;
+  
+  
 }
 
 .left {
