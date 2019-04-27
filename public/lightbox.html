@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <title>纯CSS实现Lightbox放大图片</title>
+    <style>
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_mrc {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 46%;
+            height: 50%;
+            padding: 13px;
+            border: 16px solid orange;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+        .codefans_net {
+            width: 420px;
+            height: 210px;
+            background-color: #efefef;
+            color: #666;
+            border-width: 1px;
+            border-color: #999;
+            border-style: solid;
+            margin: 6px;
+            padding: 6px;
+            font-Size: 14px;
+            line-height: 200%;
+            float: midden;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="codefans_net">CSS的“Lightbox”是一个人见人爱的图片显示技术，可以实现点击小图无刷新显示大图的功能，如果你不是太理解这种效果，你可以点击下边的图片就会明白了！<br>
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img
+                border="0" src="http://p1.mb5u.com/texiao/1/20110225160439121.jpg" width="100" height="62"></a>
+        <div id="light" class="white_mrc">
+            <a target="_blank" href="#">
+                <img border="0" src="http://p1.mb5u.com/texiao/20110225160439123.jpg" width="350" height="216"></a> <a
+                href="javascript:void(0)"
+                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</a>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+    </p>
+</body>
+
+</html>

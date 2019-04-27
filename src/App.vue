@@ -1,21 +1,26 @@
 <template>
   <div id="app">
     <div class="left">
-      <Polar/>
-      <LineD/>
-      <Radar/>
+      <Polar />
+      <LineD />
+      <Radar />
     </div>
     <div class="center">
       <div class="graph">
         <TMap />
-        <TMap />
-        <TMap />
-        <TMap />
+        <!-- <TMap /> -->
+        <!-- <TMap /> -->
+        <!-- <TMap /> -->
       </div>
     </div>
     <div class="right">
-      <One/>
+      <One />
     </div>
+    <div
+      class="mask-fade"
+      style="display:none"
+      v-on:click="normalize"
+    ></div>
   </div>
 </template>
 
@@ -34,14 +39,47 @@ export default {
     One,
     Radar,
     TMap
+  },
+  mounted() {
+    this.autoResize()
+    window.onresize = this.autoResize
+    
+  },
+  methods: {
+    autoResize: function() {
+       let winHeight = 0
+      if (window.innerHeight) {
+        winHeight = window.innerHeight
+      }
+      else if ((document.body) && (document.body.clientHeight)) {
+        winHeight = document.documentElement.clientHeight
+      }
+      document.getElementById("app").style.height = winHeight + "px"
+    },
+
+    normalize: function() {
+      let t = document.querySelector(".max")
+      t.className = "echarts map"
+      document.querySelector(".mask-fade").style.display="none"
+    }
   }
 };
 </script>
 
 <style>
-body{
-  background-color: rgba(37,37,48)
+body {
+  background-color: rgba(37, 37, 48);
 }
+
+.echarts {
+  /* min-width: 200px; */
+  /* height: 33%; */
+  width: 100%;
+  min-height: 200px;
+  height: 80%;
+  /* max-height: 30%; */
+}
+
 #app {
   display: flex;
   flex-direction: row;
@@ -49,15 +87,17 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /*color: #2c3e50;*/
-  color:rgba(236,255,255,1);
-  margin-top: 60px;
-  
-  
+  color: rgba(236, 255, 255, 1);
 }
 
 .left {
   width: 22%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.left > div {
+  height: 33%;
 }
 
 .center {
@@ -85,5 +125,18 @@ body{
 .right {
   float: right;
   width: 22%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mask-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  opacity: 0.8;
+  background-color: gray;
 }
 </style>

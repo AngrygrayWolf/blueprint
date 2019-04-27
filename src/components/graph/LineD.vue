@@ -1,15 +1,16 @@
 <template>
-    <div>
-        <div class="title">
-            <div class="icon_vertical"></div>
-            标题一
-        </div>
-        <v-chart :options="bar"
-                ref="bar"
-                theme="ovilia-green"
-                autoresize
-        />
+  <div>
+    <div class="title">
+      <div class="icon_vertical"></div>
+      <p>标题一</p>
     </div>
+    <v-chart
+      :options="bar"
+      ref="bar"
+      theme="ovilia-green"
+      autoresize
+    />
+  </div>
 </template>
 
 <script>
@@ -166,26 +167,22 @@ export default {
 
 
 <style>
-.echarts {
-    width: 500px;
-    max-height: 30%;
-}
 .icon_vertical {
-    float: left;
-    width: 2px;
-    height: 14px;
-    background: rgba(255, 0, 0, 0.5);
-    margin: 15px 15px 0 0;
+  float: left;
+  width: 2px;
+  height: 14px;
+  background: rgba(255, 0, 0, 0.5);
+  margin: 15px 15px 0 0;
 }
 
 .title {
-    text-align: left;
-    width: 80%;
-    height: 44px;
-    line-height: 44px;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-size: 16px;
-    padding-left: 25px;
+  text-align: left;
+  width: 80%;
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 16px;
+  padding-left: 25px;
 }
 </style>
